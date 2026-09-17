@@ -144,7 +144,7 @@ export function HomeScreen() {
                 </View>
                 <View style={styles.weekBody}>
                   <Text style={styles.weekClient}>{item.clientName}</Text>
-                  <Text style={styles.weekTitle} numberOfLines={2}>
+                  <Text style={styles.weekTitle} numberOfLines={1}>
                     {item.title}
                   </Text>
                 </View>
@@ -284,6 +284,7 @@ const styles = StyleSheet.create({
     fontSize: 12,
     fontWeight: '700',
     color: colors.muted,
+    flexShrink: 0,
   },
   empty: {
     backgroundColor: colors.paper,
